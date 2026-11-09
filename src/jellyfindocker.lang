@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "jellyfindocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[zh-cn]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin 是自由软件媒体系统：把 NAS 上的电影、剧集、音乐和照片串流到浏览器、手机、电视和 Kodi。本应用使用 Docker Hub 官方镜像并以非 root 用户运行，媒体库元数据与配置保存在应用数据目录，从桌面图标打开。"
+release_note = "1. First release."
+important    = "首次使用：打开网页完成安装向导（创建管理员账号，然后添加指向共享文件夹的媒体库）。容器以 uid 1000 运行，挂载的目录需对该用户可读。默认未启用硬件转码（未传 /dev/dri），转码走 CPU。需要 DockerEngine；Docker Hub 不可达时先配置镜像加速。卸载并删除数据前请备份 DockerAppData/jellyfindocker。局域网内为 HTTP。"
+
+[zh-hk]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin 是自由軟件媒體系統：把 NAS 上的電影、劇集、音樂和相片串流到瀏覽器、手機、電視和 Kodi。本應用使用 Docker Hub 官方鏡像並以非 root 使用者運行，媒體庫中繼資料與設定保存在應用資料目錄，從桌面圖示開啟。"
+release_note = "1. First release."
+important    = "首次使用：開啟網頁完成安裝精靈（建立管理員帳號，然後加入指向共用資料夾的媒體庫）。容器以 uid 1000 運行，掛載的目錄需對該使用者可讀。預設未啟用硬體轉碼（未傳 /dev/dri），轉碼走 CPU。需要 DockerEngine；Docker Hub 不可達時先設定鏡像加速。解除安裝並刪除資料前請備份 DockerAppData/jellyfindocker。區域網路內為 HTTP。"
+
+[fr-fr]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[de-de]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[it-it]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[es-es]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[hu-hu]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[ja-jp]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[ko-kr]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[pl-pl]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[ru-ru]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[tr-tr]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[pt-pt]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[ar-sa]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[cs-cz]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[he-il]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[id-id]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[nb-no]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[nl-nl]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[sv-se]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[th-th]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+
+[vi-vn]
+name         = "Jellyfin"
+auth         = "jellyfin"
+version      = "@@VERSION@@"
+descript     = "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon."
+release_note = "1. First release."
+important    = "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN."
+

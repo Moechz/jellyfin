@@ -1,0 +1,101 @@
+{
+  "app_id": "jellyfindocker",
+  "title": "Jellyfin",
+  "image": "jellyfin/jellyfin:10.11.11",
+  "repo_name": "jellyfin",
+  "mode": "plain",
+  "container_port": 8096,
+  "category": [
+    "Audio_Video_Entertainment"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/jellyfindocker/cache",
+      "container": "/cache"
+    },
+    {
+      "host": "/Volume1/DockerAppData/jellyfindocker/config",
+      "container": "/config"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "auth": "jellyfin",
+  "upstream_url": "https://github.com/jellyfin/jellyfin-packaging",
+  "upstream_license": "GPL-3.0",
+  "descript": "Jellyfin is the free software media system: stream movies, TV shows, music and photos from your NAS to browsers, phones, TVs and Kodi. This package runs the official Docker Hub image as a non-root container, keeps library metadata and configuration in the application data folder, and opens from its desktop icon.",
+  "release_note": "1. First release.",
+  "important": "First run: open the web UI and finish the setup wizard (create the admin account, then add media libraries pointing at your shared folders). The container runs as uid 1000, so mounted folders must be readable by that user. Hardware transcoding is not enabled (no /dev/dri); transcoding is CPU-only. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up DockerAppData/jellyfindocker before uninstalling with data removal. Plain HTTP on the LAN.",
+  "probe": {
+    "user_in_image": "(root)",
+    "entrypoint": [
+      "/jellyfin/jellyfin"
+    ],
+    "cmd": null,
+    "exposed_ports": [
+      8096
+    ],
+    "declared_volumes": [
+      "/cache",
+      "/config"
+    ],
+    "image_healthcheck": [
+      "CMD-SHELL",
+      "curl --noproxy 'localhost' -Lk -fsS \"${HEALTHCHECK_URL}\" || exit 1"
+    ],
+    "digest": "docker.1ms.run/jellyfin/jellyfin@sha256:aefb67e6a7ff1debdd154a78a7bbb780fd0c873d8639210a7f6a2016ad2b35db",
+    "architecture": "x86_64",
+    "platforms": [],
+    "http_client_in_image": "curl",
+    "trial_run": {
+      "ok": true,
+      "http_code": "503",
+      "state": "running",
+      "paths": [],
+      "host_port": 18000,
+      "log_tail": "Main: Temp directory path: /tmp/jellyfin\n[16:15:21] [INF] [6] Main: Web resources path: /jellyfin/jellyfin-web\n[16:15:21] [INF] [6] Main: Application directory: /jellyfin/\n[16:15:21] [INF] [6] Jellyfin.Server.Startup: Storage path `/config/data` (Ram) successfully checked with 7.1GiB free which is over the minimum of 2GiB.\n[16:15:21] [INF] [6] Jellyfin.Server.Startup: Storage path `/cache` (Ram) successfully checked with 7.1GiB free which is over the minimum of 2GiB.\n[16:15:21] [INF] [6] Jellyfin.Server.Startup: Storage path `/config` (Ram) successfully checked with 7.1GiB free which is over the minimum of 2GiB.\n[16:15:21] [INF] [6] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: /cache\n[16:15:21] [INF] [6] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: Data Source=/config/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True\n[16:15:21] [INF] [6] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: \nPRAGMA locking_mode=NORMAL;\nPRAGMA journal_size_limit=134217728;\nPRAGMA synchronous=1;\nPRAGMA temp_store=2;\n\n[16:15:21] [INF] [6] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.\n[16:15:21] [INF] [6] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.\n[16:15:21] [INF] [6] Jellyfin.Server.Migrations.JellyfinMigrationService: System initialisation detected. Seed data.",
+      "files_in_mounts": "/tmp/tosdocker-trial-1794240917/config/root/.jellyfin-root\n/tmp/tosdocker-trial-1794240917/config/.jellyfin-data\n/tmp/tosdocker-trial-1794240917/config/plugins/.jellyfin-plugin\n/tmp/tosdocker-trial-1794240917/config/data/.jellyfin-data\n/tmp/tosdocker-trial-1794240917/config/config/database.xml"
+    },
+    "docker_hub": {},
+    "github": {
+      "owner": "jellyfin",
+      "repo": "jellyfin-packaging",
+      "description": "Jellyfin Server/Web packaging and release workflows",
+      "license": "GPL-3.0",
+      "homepage": ""
+    }
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "curl -s -o /dev/null http://127.0.0.1:8096/ || exit 1"
+  ],
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "jellyfindocker",
+  "github_repo": "jellyfin",
+  "upstream_version": "10.11.11",
+  "release_tag_prefix": "v",
+  "version": "10.11.11-1",
+  "help": "https://github.com/Moechz/jellyfin/issues",
+  "official": "https://github.com/jellyfin/jellyfin-packaging",
+  "license": "GPL-3.0",
+  "docker_socket": false,
+  "group_add": [],
+  "platforms": [
+    "x86_64",
+    "aarch64"
+  ],
+  "translations": {
+    "zh-cn": {
+      "descript": "Jellyfin 是自由软件媒体系统：把 NAS 上的电影、剧集、音乐和照片串流到浏览器、手机、电视和 Kodi。本应用使用 Docker Hub 官方镜像并以非 root 用户运行，媒体库元数据与配置保存在应用数据目录，从桌面图标打开。",
+      "important": "首次使用：打开网页完成安装向导（创建管理员账号，然后添加指向共享文件夹的媒体库）。容器以 uid 1000 运行，挂载的目录需对该用户可读。默认未启用硬件转码（未传 /dev/dri），转码走 CPU。需要 DockerEngine；Docker Hub 不可达时先配置镜像加速。卸载并删除数据前请备份 DockerAppData/jellyfindocker。局域网内为 HTTP。"
+    },
+    "zh-hk": {
+      "descript": "Jellyfin 是自由軟件媒體系統：把 NAS 上的電影、劇集、音樂和相片串流到瀏覽器、手機、電視和 Kodi。本應用使用 Docker Hub 官方鏡像並以非 root 使用者運行，媒體庫中繼資料與設定保存在應用資料目錄，從桌面圖示開啟。",
+      "important": "首次使用：開啟網頁完成安裝精靈（建立管理員帳號，然後加入指向共用資料夾的媒體庫）。容器以 uid 1000 運行，掛載的目錄需對該使用者可讀。預設未啟用硬體轉碼（未傳 /dev/dri），轉碼走 CPU。需要 DockerEngine；Docker Hub 不可達時先設定鏡像加速。解除安裝並刪除資料前請備份 DockerAppData/jellyfindocker。區域網路內為 HTTP。"
+    }
+  },
+  "host_port": 8039
+}
