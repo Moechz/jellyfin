@@ -92,3 +92,19 @@ Jellyfin is distributed by its upstream authors under **GPL-3.0**. The container
 ---
 
 Packaged for TOS 7 by Moechz. Upstream image used unmodified from Docker Hub.
+
+## Repository layout
+
+```
+src/                 four shipped files (config.ini, lang, svg, compose) - hand-written artefacts
+scripts/build.sh     build + self-verify one architecture
+scripts/build-dual.sh build both architectures, keep <appid>_<arch>.tar.gz assets
+test/install-and-verify.sh   on-device E2E (requires uid 0; never on a production NAS)
+PRIVACY.md           privacy policy, linked from the package Help field
+```
+
+## Privacy
+
+See [PRIVACY.md](PRIVACY.md). No telemetry; outbound requests are the metadata
+providers and plugins you enable. Application data stays in
+`/Volume1/DockerAppData/jellyfindocker/`.
